@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM cwpearson/latex:base
 LABEL maintainer="carl.w.pearson@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
 
