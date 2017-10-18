@@ -1,6 +1,5 @@
 # latex-docker
 
-<<<<<<< HEAD
 Inspired by [blang/latex-docker](https://github.com/blang/latex-docker)
 
 There are 5 tags available at [cwpearson/latex](https://hub.docker.com/r/cwpearson/latex/):
@@ -18,8 +17,3 @@ There are 5 tags available at [cwpearson/latex](https://hub.docker.com/r/cwpears
 To run this in bash, try something like:
 
     docker run --rm -i --user="$(id -u):$(id -g)" --net=none -v "$PWD":/data cwpearson/latex:heavy "$@"
-=======
-    docker run --rm -i --user="$(id -u):$(id -g)" --net=none -v "$PWD":/data cwpearson/latex:full "$@"
-    
-https://hub.docker.com/r/cwpearson/latex/
->>>>>>> 57a863ee5c9883f9958859cd1d52738fc90593d7
