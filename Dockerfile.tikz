@@ -1,9 +1,11 @@
-FROM cwpearson/latex:base
+FROM cwpearson/latex:science
 LABEL maintainer="carl.w.pearson@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -q && apt-get install -qy --no-install-recommends \
-    texlive-full \
+    texlive-latex-extra \
+    texlive-pictures \
+    pgf \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /data
