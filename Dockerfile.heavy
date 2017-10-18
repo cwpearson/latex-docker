@@ -1,0 +1,56 @@
+FROM cwpearson/latex:base
+LABEL maintainer="carl.w.pearson@gmail.com"
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update -q && apt-get install -qy --no-install-recommends \
+  texlive-latex-extra \
+  texlive-formats-extra \
+  latexdiff \
+  texlive-binaries \
+  texlive-base \
+  texlive-latex-recommended \
+  lcdf-typetools \
+  texlive-font-utils \
+  texlive-htmlxml \
+  texlive-metapost \
+  texlive-pstricks \
+  purifyeps \
+  dvidvi \
+  texlive-generic-extra \
+  prosper \
+  texlive-publishers \
+  texlive-science \
+  fragmaster \
+  texlive-fonts-recommended \
+  prerex \
+  texlive-humanities \
+  texinfo \
+  texlive-xetex \
+  texlive-math-extra \
+  texlive-luatex \
+  feynmf \
+  texlive-fonts-extra \
+  texlive-plain-extra \
+  chktex \
+  texlive-extra-utils \
+  lmodern \
+  tex4ht \
+  psutils \
+  tex-gyre \
+  texlive-games \
+  texlive-latex-base \
+  dvipng \
+  texlive-omega \
+  latex-cjk-all \
+  cm-super \
+  latexmk \
+  lacheck \
+  tipa \
+  texlive-music \
+  texlive-pictures \
+  texlive-bibtex-extra \
+  t1utils \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /data
+VOLUME ["/data"]
