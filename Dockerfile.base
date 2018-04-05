@@ -3,7 +3,9 @@ LABEL maintainer="carl.w.pearson@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -q && apt-get install -qy --no-install-recommends \
+    graphviz \
     make \
+    inkscape \
     texlive-base \
     && rm -rf /var/lib/apt/lists/*
 
