@@ -6,10 +6,10 @@ There are 5 tags available at [cwpearson/latex](https://hub.docker.com/r/cwpears
 
 | tag | packages |
 | -- | -- |
-| cwpearson/latex:base    | `texlive-base` |
+| cwpearson/latex:base    | `texlive-base, make` |
 | cwpearson/latex:science | base + `texlive-science` |
 | cwpearson/latex:tikz    | science + `texlive-latex-extra`, `texlive-pictures`, `pgf` |
-| cwpearson/latex:heavy   | base, + `texlive-full` without languages, documentation
+| cwpearson/latex:heavy   | base + `texlive-full` without languages, documentation
 | cwpearson/latex:full    | heavy + `texlive-full`
 
 `cwpearson/latex:latest` points to `cwpearson/latex:full`

@@ -3,6 +3,7 @@ LABEL maintainer="carl.w.pearson@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -q && apt-get install -qy --no-install-recommends \
+    make \
     texlive-base \
     && rm -rf /var/lib/apt/lists/*
 
