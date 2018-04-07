@@ -12,7 +12,7 @@ RUN apt-get update -q && apt-get install -qy --no-install-recommends \
     texlive-base \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install seaborn
+RUN pip install pandas seaborn
 
 WORKDIR /data
 VOLUME ["/data"]
