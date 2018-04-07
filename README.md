@@ -6,7 +6,7 @@ There are 5 tags available at [cwpearson/latex](https://hub.docker.com/r/cwpears
 
 | tag | packages |
 | -- | -- |
-| cwpearson/latex:base    | `graphviz, inkscape, make, texlive-base` |
+| cwpearson/latex:base    | `graphviz, inkscape, make, python, texlive-base` |
 | cwpearson/latex:science | base + `texlive-science` |
 | cwpearson/latex:tikz    | science + `texlive-latex-extra`, `texlive-pictures`, `pgf` |
 | cwpearson/latex:heavy   | base + `texlive-full` without languages, documentation
