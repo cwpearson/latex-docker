@@ -3,16 +3,23 @@ LABEL maintainer="carl.w.pearson@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -q && apt-get install -qy --no-install-recommends \
+    gcc \
     graphviz \
     inkscape \
     make \
     python \
+    python-dev \
     python-tk \
     python-pip \
     texlive-base \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install pandas seaborn
+RUN pip install --upgrade pip \
+    && rm -r ~/.cache/pip
+RUN pip install --upgrade setuptools \
+    && rm -r ~/.cache/pip
+RUN pip install pandas seaborn \
+    && rm -r ~/.cache/pip
 
 WORKDIR /data
 VOLUME ["/data"]
