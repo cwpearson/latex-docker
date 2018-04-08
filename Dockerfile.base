@@ -18,7 +18,7 @@ RUN pip install --upgrade pip \
     && rm -r ~/.cache/pip
 RUN pip install --upgrade setuptools \
     && rm -r ~/.cache/pip
-RUN pip install pandas seaborn \
+RUN pip install pandas seaborn pyyaml \
     && rm -r ~/.cache/pip
 
 WORKDIR /data
