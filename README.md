@@ -6,7 +6,7 @@ There are 5 tags available at [cwpearson/latex](https://hub.docker.com/r/cwpears
 
 | tag | ubuntu packages |
 | -- | -- |
-| cwpearson/latex:base    | `graphviz`, `inkscape`, `make`, `python`, `python-tk`, `python-pip` `texlive-base` |
+| cwpearson/latex:base    | `gcc`, `graphviz`, `inkscape`, `make`, `python`, `python-dev`,  `python-tk`, `python-pip` `texlive-base` |
 | cwpearson/latex:science | base + `texlive-science` |
 | cwpearson/latex:tikz    | science + `texlive-latex-extra`, `texlive-pictures`, `pgf` |
 | cwpearson/latex:heavy   | base + `texlive-full` without languages, documentation |
@@ -14,7 +14,7 @@ There are 5 tags available at [cwpearson/latex](https://hub.docker.com/r/cwpears
 
 | tag | pip packages |
 | -- | -- |
-| cwpearson/latex:base    | `pandas`, `seaborn` |
+| cwpearson/latex:base    | `pandas`, `seaborn`, `setuptools` |
 | cwpearson/latex:science | base |
 | cwpearson/latex:tikz    | base |
 | cwpearson/latex:heavy   | base |
