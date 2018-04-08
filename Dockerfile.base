@@ -1,6 +1,7 @@
 FROM ubuntu:xenial
 LABEL maintainer="carl.w.pearson@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
+ENV DISPLAY :0
 
 RUN apt-get update -q && apt-get install -qy --no-install-recommends \
     gcc \
