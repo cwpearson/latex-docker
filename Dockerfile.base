@@ -22,5 +22,9 @@ RUN pip install --upgrade setuptools \
 RUN pip install pandas seaborn pyyaml \
     && rm -r ~/.cache/pip
 
+ADD entry.sh /entry.sh
+
 WORKDIR /data
 VOLUME ["/data"]
+
+ENTRYPOINT ["/entry.sh"]
