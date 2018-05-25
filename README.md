@@ -4,6 +4,8 @@ Inspired by [blang/latex-docker](https://github.com/blang/latex-docker)
 
 There are 5 tags available at [cwpearson/latex](https://hub.docker.com/r/cwpearson/latex/):
 
+All python packages are duplicated in python3 as well.
+
 | tag | ubuntu packages |
 | -- | -- |
 | cwpearson/latex:base    | `gcc`, `graphviz`, `inkscape`, `make`, `python`, `python-dev`,  `python-tk`, `python-pip` `texlive-base` |
