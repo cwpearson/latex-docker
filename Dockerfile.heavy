@@ -2,7 +2,7 @@ FROM cwpearson/latex:base
 LABEL maintainer="carl.w.pearson@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update -q && apt-get install -qy --no-install-recommends \
+RUN apt-get update -q && apt-get install -qy --no-install-recommends --no-install-suggests \
   texlive-latex-extra \
   texlive-formats-extra \
   latexdiff \
